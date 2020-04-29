@@ -1,0 +1,353 @@
+#app{
+    min-width: 1100px;
+    overflow: hidden;
+}
+.g-head{
+    width: 100%;
+    height: 86px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #fff;
+}
+.m-wrap{
+    height: 100%;
+    width: 1100px;
+    margin: 0 auto;
+}
+.m-head_logo{
+    float: left;
+    margin-top: 16px;
+}
+.m-head_nav{
+    float: right;
+}
+.m-head_nav>li{
+    float: left;
+    line-height: 86px;
+    position: relative;
+    font-size: 20px;
+    padding: 0 25px;
+    color: #4c5572;
+    cursor: pointer;
+}
+.m-head_nav>li:first-child::after,.m-head_nav>li:first-child+li::after,.m-head_nav>li:first-child+li+li::after{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 15px;
+  background: #4c5572;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;  
+  right: 0;
+}
+
+
+
+.g-banner{
+    margin-top: 86px;
+    max-height: 700px;
+    width: 100%;
+    overflow: hidden;
+}
+.g-banner img{
+    width: 100%;
+}
+.g-banner .f-ban_next,.g-banner .f-ban_prev{
+    position: absolute;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    margin-top: -28px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: none;
+}
+.g-banner .f-ban_next{
+    background: url(../images/ban-next.png);
+    right: 10%;
+}
+.g-banner .f-ban_prev{
+    background: url(../images/ban-prev.png);
+    left: 10%;
+}
+
+.g-intro{
+    padding: 40px 0;
+    width: 100%;
+    overflow: hidden;
+}
+.m-intro_tit,.m-team_tit,.m-ques_tit,.m-con_tit{
+    color: #44c7e1;
+    text-align: center;
+    line-height: 62px;
+    font-size: 42px
+}
+.m-intro_sum,.m-team_sum,.m-ques_sum,.m-con_sum{
+    font-size: 18px;
+    color: #70778e;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    margin-bottom: 40px;
+}
+.m-intro_par,.m-team_par,.m-ques_par{
+    line-height: 40px;
+    color: #70778e;
+    text-indent: 2em;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+.m-intro_video{
+    margin-top: 10px;
+    display: inline-block;
+}
+.m-intro_video>li{
+    position: relative;
+    width: 546px;
+    height: 374px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+.m-intro_video>li:first-child,.m-intro_video>li:first-child+li+li{
+    margin-right: 8px;
+}
+.m-intro_video span{
+    font-size: 22px;
+    color: #4c5572;
+}
+
+.m-intro_ment{
+    display: flex;
+    display: -webkit-flex;
+}
+.m-intro_ment>li{
+    flex-grow:1;
+    text-align: center
+}
+.m-intro_ment img{
+    display: inline-block;
+    text-align: center;
+}
+.m-intro_ment span{
+    margin-top: 15px;
+    text-align: center;
+    display: block;
+    color: #4c5572;
+    font-size: 22px;
+}
+
+.g-team{
+    background: #f8f8f8;
+    padding: 40px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.m-team_ban{
+    width: 100%;
+    height: 588px;
+}
+
+.f-team_btn{
+    text-align: center;
+    margin-top:22px;
+}
+.f-team_btn>span{
+    margin: 0 5px;
+    border-radius: 0;
+    width: 44px;
+    height: 5px;;
+}
+.swiper-pagination-bullet-active{
+    background: #00b2d6;
+}
+.g-ques{
+    background: #00b2d6;
+    padding: 40px 0 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+.g-ques .m-ques_tit,.g-ques .m-ques_sum,.g-ques .m-ques_par{
+    color: #fff;
+}
+.m-ques_list{
+    margin-top: 60px
+}
+.list_left{
+    padding-left: 67px;
+    float: left;
+}
+.list_left_tit{
+    font-size: 30px;
+    color: #fff;
+    line-height: 54px;
+    letter-spacing: 4px;
+}
+.list_left_par{
+    width: 474px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 34px;
+}
+.list-wrap{
+    max-width: 500px;
+    display: inline-block;
+}
+.list-wrap>li{
+    width: 82px;
+    height: 143px;
+    float: left;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.list-wrap span{
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    width: 120px;
+    margin-left: -20px;
+}
+
+.list_right{
+    float: right;
+    padding-right: 80px;
+    margin-top: -38px;
+}
+.g-con{
+    width: 100%;
+    padding: 40px 0;
+    background: #f8f8f8;
+}
+.m-con_list{
+    display: flex;
+    display: -webkit-flex;
+    margin-bottom: 70px;
+}
+.m-con_list>li{
+    flex-grow: 1;
+    text-align: center;
+}   
+  
+.m-con_list span{
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    color: #4c5572;
+    font-size: 20px;
+    line-height: 40px;
+    width: 100%;
+} 
+.m-con_list img{
+    display: block;
+    margin: 0 auto;
+}
+.img-public{
+    padding-top: 30px;
+}
+.m-con_list .lost-public{
+    margin: 0;
+}
+#map{
+    width: 100%;
+    height: 500px;
+}
+.g-foot{
+    width: 100%;
+    height: 312px;
+    background: #00b2d6;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.m-foot_logo{
+    padding: 40px 0;
+}
+.m-foot_copy{
+    margin-bottom: 20px;
+}
+
+.m-side{
+    width: 200px;
+    height: 660px;
+    position: fixed;
+    left: -200px;
+    top: 50%;
+    margin-top: -330px;
+    border-radius: 4px;
+    border: 1px solid #999;
+    z-index: 999;
+    background: #fff;
+    padding: 0 14px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #4c5572;
+    overflow: hidden;
+    transition: all .3s;
+}
+.side_call_title{
+    font-size: 28px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.side_call{
+    font-size: 18px;
+    display: block;
+    border-bottom: 1px solid #4c5572;
+    padding-bottom: 30px;
+}
+.side_call_wecahr{
+    font-size: 28px;
+    margin: 20px 0;
+    display: block;
+}
+.side_call_intro{
+    margin: 10px 0 20px 0;
+    display: block;
+    font-size: 17px;
+}
+.g-ret{
+    width: 82px;
+    height: 110px;
+    position: fixed;
+    right: 2%;
+    z-index: 9999;
+    top: 50%;
+    margin-top:-55px;
+    background: url(../images/uptap.png) no-repeat;
+    cursor: pointer;
+    display: none;
+}
+.m-intro_video iframe{
+	display: none;
+}
+
+
+/* 改版 */
+.m-intro_img{
+    margin: 20px 0;
+}
+.m-side img{
+    width: 140px;
+    height: 140px;
+}
+.m-con_list .img-public{
+    width: 140px;
+    height: 140px;
+}
+.m-intro_img img{
+    width: 100%;
+}
